@@ -33,7 +33,7 @@ plt.figure("Amazon vs. Alibaba")
 plt.plot(df1["Date"], df1["Close"], 'r-', linewidth=0.6, label="AMZN , mean="+str(round(mean, 2)), data=df1)
 # or the same can be:
 # plt.plot("Date", "Close", 'r-', linewidth=0.6, label="APPL Stock price, mean="+str(mean), data=df1)
-plt.plot(df2["Date"], df2["Close"], 'r-', linewidth=0.6, label="BABA, mean="+str(round(mean2, 2)), data=df2)
+plt.plot(df2["Date"], df2["Close"]*15, 'b-', linewidth=0.6, label="BABA, mean="+str(round(mean2, 2)), data=df2)
 plt.xlabel("Dates")
 plt.legend(loc="upper left")
 
